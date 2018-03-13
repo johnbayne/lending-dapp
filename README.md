@@ -16,7 +16,7 @@ Initial scaffolding thanks to: https://github.com/wespr/truffle-vue
 	npm install
 	```
 
-3. Launch [`ganache-cli`](https://github.com/trufflesuite/ganache-cli) in it's own command prompt tab. Default settings should work out of the box, no <options> args required
+3. Launch [`ganache-cli`](https://github.com/trufflesuite/ganache-cli) in its own command prompt tab. Default settings should work out of the box, no <options> args required
 	```
 	ganache-cli <options>
 	```
@@ -33,7 +33,7 @@ Initial scaffolding thanks to: https://github.com/wespr/truffle-vue
   ipfs init
   ```
 6. You will need to allow cross-origin resource sharing (CORS) for the ipfs API
-to work. For local testing, add localhost:8080:
+to work. For local testing, add localhost:8080
   ```
   ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin "[\"http://localhost:8080\"]"
   ipfs config --json API.HTTPHeaders.Access-Control-Allow-Credentials "[\"true\"]"
