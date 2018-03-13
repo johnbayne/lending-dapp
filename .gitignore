@@ -9,7 +9,7 @@ test/e2e/reports
 selenium-debug.log
 
 
-build/contracts/**/*
+build/contracts/
 
 TODO
 THOUGHTS
