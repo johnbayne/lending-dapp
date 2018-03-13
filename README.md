@@ -27,7 +27,7 @@ Initial scaffolding thanks to: https://github.com/wespr/truffle-vue
 	truffle migrate
 	``` 
 
-5. Install [go-ipfs](https://dist.ipfs.io/#go-ipfs) and install by running
+5. Install [go-ipfs](https://dist.ipfs.io/#go-ipfs) and initialize by running
   ```
   sudo ./install.sh
   ipfs init
