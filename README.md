@@ -27,11 +27,29 @@ Initial scaffolding thanks to: https://github.com/wespr/truffle-vue
 	truffle migrate
 	``` 
 
-4. Run the webpack server for front-end hot reloading. Smart contract changes do not support hot reloading for now.
+5. Install [go-ipfs](https://dist.ipfs.io/#go-ipfs) and install by running
+  ```
+  sudo ./install.sh
+  ipfs init
+  ```
+6. You will need to allow cross-origin resource sharing (CORS) for the ipfs API
+to work. For local testing, add localhost:8080:
+  ```
+  ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin "[\"http://localhost:8080\"]"
+  ipfs config --json API.HTTPHeaders.Access-Control-Allow-Credentials "[\"true\"]"
+  ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods "[\"PUT\", \"POST\", \"GET\"]"
+  ```
+
+7. Start the ipfs daemon in its own command prompt tab with
+  ```
+  ipfs daemon
+  ```
+
+8. Run the webpack server for front-end hot reloading. Smart contract changes do not support hot reloading for now.
 	```
 	npm run start
 	```
-    
+
 ## Tests
 This box comes with everything bundled for `unit`, `e2e` and `truffle` contracts testing. The tests are incomplete at the moment.
 
